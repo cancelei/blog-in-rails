@@ -156,7 +156,7 @@ You can deploy this project using:
 - [ ] **User Interface**
 - [ ] **Validations**
 - [ ] **API documentation**
-- [ ] **Model Data**
+- [x] **Model Data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
