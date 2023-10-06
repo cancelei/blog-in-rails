@@ -108,18 +108,20 @@ To run the project, execute the following command:
 
 ### Run tests
 
-Test are under construction, but we expect to have them completed soon!
+<!-- Test are under construction, but we expect to have them completed soon! -->
 
-<!--
-Example command:
-To run tests, run the following command:
-
-
+Before running tests, ensure you've set up the test database:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+bin/rails db:migrate RAILS_ENV=test
 ```
---->
+
+Run All Tests
+To execute all test cases, use the following command:
+
+```sh
+  bundle exec rspec
+```
 
 ### Deployment
 
@@ -154,7 +156,7 @@ You can deploy this project using:
 > We this project can improve, we are planning to include the next features soon:
 
 - [ ] **User Interface**
-- [ ] **Validations**
+- [x] **Validations**
 - [ ] **API documentation**
 - [x] **Model Data**
 
