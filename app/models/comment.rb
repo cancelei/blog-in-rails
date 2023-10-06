@@ -7,4 +7,6 @@ class Comment < ApplicationRecord
   def update_post_comments_counter
     post.increment!(:comments_counter)
   end
+
+  validates :content, presence: true
 end
