@@ -37,4 +37,25 @@ RSpec.describe Comment, type: :model do
   # When you have scopes or class methods, you can add them here.
 
   # When you have instance methods, you can add them here.
+  describe '#update_post_comment_counter' do
+    let(:post) { FactoryBot.create(:post) }
+
+    context 'when a comment is created' do
+      it 'increases the post comments_counter by 1' do
+        expect do
+          FactoryBot.create(:comment, post:)
+        end.to change { post.reload.comments_counter }.by(1)
+      end
+    end
+
+    context 'when a comment is destroyed' do
+      let!(:comment) { FactoryBot.create(:comment, post:) }
+
+      it 'decreases the post comments_counter by 1' do
+        expect do
+          comment.destroy
+        end.to change { post.reload.comments_counter }.by(-1)
+      end
+    end
+  end
 end

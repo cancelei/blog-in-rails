@@ -33,4 +33,20 @@ RSpec.describe User, type: :model do
   # When you have scopes or class methods, you can add them here.
 
   # When you have instance methods, you can add them here.
+  describe 'methods' do
+    describe '#recent_posts' do
+      it 'returns the 3 most recent posts' do
+        user = FactoryBot.create(:user)
+        oldest_post = FactoryBot.create(:post, author: user, created_at: 4.days.ago)
+        posts = [
+          FactoryBot.create(:post, author: user, created_at: 3.days.ago),
+          FactoryBot.create(:post, author: user, created_at: 2.days.ago),
+          FactoryBot.create(:post, author: user, created_at: 1.day.ago)
+        ]
+
+        expect(user.recent_posts).to eq(posts.reverse)
+        expect(user.recent_posts).not_to include(oldest_post)
+      end
+    end
+  end
 end

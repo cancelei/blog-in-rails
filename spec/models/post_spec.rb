@@ -45,4 +45,32 @@ RSpec.describe Post, type: :model do
   end
 
   # Add tests for other methods or functionalities if they exist
+  describe 'methods' do
+    let(:user) { FactoryBot.create(:user) }
+    let(:post) { FactoryBot.create(:post, author: user) }
+
+    context 'recent_comments' do
+      it 'fetches the 5 most recent comments' do
+        10.times { FactoryBot.create(:comment, post:) }
+        expect(post.recent_comments.count).to eq(5)
+        expect(post.recent_comments.first).to eq(Comment.last)
+      end
+    end
+  end
+
+  describe 'update_user_posts_counter' do
+    it 'updates the posts_counter of the author' do
+      user = FactoryBot.create(:user)
+      post = FactoryBot.create(:post, author: user)
+      initial_count = user.posts_counter
+
+      # Now, decrement the counter to simulate a scenario where we want to test the increment function
+      user.decrement!(:posts_counter)
+
+      # Call the method
+      post.update_user_posts_counter
+
+      expect(user.reload.posts_counter).to eq(initial_count)
+    end
+  end
 end
