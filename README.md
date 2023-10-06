@@ -142,7 +142,7 @@ You can deploy this project using:
 
 👤 **Glauber Bannwart**
 
-- GitHub: [@cancelei](https://github.com/MasumaJaffery)
+- GitHub: [@cancelei](https://github.com/cancelei)
 - LinkedIn: [Glauber Bannwart](https://www.linkedin.com/in/gbannwart/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,7 +156,7 @@ You can deploy this project using:
 - [ ] **User Interface**
 - [ ] **Validations**
 - [ ] **API documentation**
-- [ ] **Model Data**
+- [x] **Model Data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +166,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MasumaJaffery/blog-app/issues).
+Feel free to check the [issues page](https://github.com/cancelei/blog-in-rails/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
