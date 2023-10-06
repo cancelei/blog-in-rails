@@ -142,7 +142,7 @@ You can deploy this project using:
 
 👤 **Glauber Bannwart**
 
-- GitHub: [@cancelei](https://github.com/MasumaJaffery)
+- GitHub: [@cancelei](https://github.com/cancelei)
 - LinkedIn: [Glauber Bannwart](https://www.linkedin.com/in/gbannwart/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
