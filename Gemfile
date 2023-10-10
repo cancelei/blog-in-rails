@@ -55,6 +55,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails', '~> 5.0'
+  gem 'simplecov', require: false
 end
 
 group :development do
@@ -73,6 +74,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 4.0'
+  gem 'rails-controller-testing'
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
