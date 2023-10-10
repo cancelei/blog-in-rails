@@ -1,3 +1,16 @@
+# Test coverage
+require 'simplecov'
+SimpleCov.start 'rails' do
+  add_filter '/bin/'
+  add_filter '/db/'
+  add_filter '/jobs/' # Ignore job directory
+  add_filter '/mailers/' # Ignore mailers
+  add_filter '/app/channels/application_cable/' # Ignore app/channels/application_cable
+
+  add_group 'Models', 'app/models'
+  add_group 'Controllers', 'app/controllers'
+end
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 require 'shoulda/matchers'
