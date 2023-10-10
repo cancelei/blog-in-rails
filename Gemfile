@@ -72,9 +72,9 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rails-controller-testing'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 4.0'
-  gem 'rails-controller-testing'
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
