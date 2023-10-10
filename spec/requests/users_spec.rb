@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-
   describe 'GET /index' do
     it 'renders the index template' do
       get root_path
@@ -37,5 +36,4 @@ RSpec.describe 'Users', type: :request do
       expect(response.body).to include(user.name)
     end
   end
-
 end
