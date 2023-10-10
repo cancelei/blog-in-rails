@@ -167,6 +167,7 @@ You can deploy this project using:
 - [x] **Validations**
 - [ ] **API documentation**
 - [x] **Model Data**
+- [x] **Controllers Testing**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
