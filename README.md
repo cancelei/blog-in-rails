@@ -98,6 +98,14 @@ Install this project with:
   bundle install
 ```
 
+Setting up the Data Base:
+
+```sh
+  rails db:create
+  rails db:migrate
+  rails db:seed
+```
+
 ### Usage
 
 To run the project, execute the following command:
@@ -155,7 +163,7 @@ You can deploy this project using:
 
 > We this project can improve, we are planning to include the next features soon:
 
-- [ ] **User Interface**
+- [x] **User Interface**
 - [x] **Validations**
 - [ ] **API documentation**
 - [x] **Model Data**
