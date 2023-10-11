@@ -4,6 +4,8 @@
   <h3><b>Blog in Rails App</b></h3>
 </div>
 
+[![codecov](https://codecov.io/gh/cancelei/blog-in-rails/graph/badge.svg?token=ITBDQ9ZRO7)](https://codecov.io/gh/cancelei/blog-in-rails)
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -168,6 +170,8 @@ You can deploy this project using:
 - [ ] **API documentation**
 - [x] **Model Data**
 - [x] **Controllers Testing**
+- [x] **Models Testing**
+- [x] **View Implementation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
