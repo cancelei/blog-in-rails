@@ -1,6 +1,33 @@
-<h2>List of posts for User <%= @user.name %></h2>
-<ul>
+<div class="posts-container">
+  <div class="user-header">
+    <div class="user-image">
+      <%= image_tag @user.photo, alt: @user.name, class: "profile-photo" %>
+    </div>
+    <div class="user-info">
+      <h2><%= @user.name %></h2>
+      <p>Number of posts: <%= @user.posts_counter %></p>
+    </div>
+  </div>
+
   <% @posts.each do |post| %>
-    <li><%= link_to post.title, user_post_path(@user, post) %></li>
+    <div class="post-card">
+      <h3><%= post.title %></h3>
+      <p><%= post.body.truncate(100) %></p>
+      <div class="post-stats">
+        <span>Comments: <%= post.comments_counter %></span>
+        <span>Likes: <%= post.likes_counter %></span>
+      </div>
+      <div class="post-comments">
+        <% post.comments.each do |comment| %>
+          <div class="comment">
+            <strong><%= comment.user.name %>:</strong> <%= comment.content %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   <% end %>
-</ul>
+
+  <div class="pagination">
+    <!-- Add pagination logic/links here if necessary -->
+  </div>
+</div>
