@@ -13,5 +13,7 @@ class Comment < ApplicationRecord
     post.decrement!(:comments_counter)
   end
 
+  scope :recent, -> { order(created_at: :desc).limit(5) }
+
   validates :content, presence: true
 end
