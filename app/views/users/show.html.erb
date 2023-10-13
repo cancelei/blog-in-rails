@@ -15,7 +15,7 @@
 
   <div class="user-posts">
     <h3>Posts:</h3>
-    <% @user.posts.take(3).each do |post| %>
+    <% @user.posts.recent.each do |post| %>
       <div class="user-post">
         <h4><%= link_to post.title, user_post_path(@user, post) %></h4>
         <p><%= post.body.truncate(100) %></p>
