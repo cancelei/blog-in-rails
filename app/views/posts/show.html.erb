@@ -5,7 +5,7 @@
         <h2 class="post-title">Post #<%= @post.id %> by <%= @post.author.name %></h2>
         <div class="post-metadata">
             <span>Comments: <%= @post.comments.count %></span>
-            <%= link_to 'Like', post_likes_path(@post), method: :post %>
+            <%= button_to 'Like', post_likes_path(@post), method: :post %>
             <span>Likes: <%= @post.likes_counter %></span>
 
             <!-- You can add likes in the same manner if you have implemented that -->
@@ -26,6 +26,13 @@
             <div class="comment">
                 <strong><%= comment.user.name %>:</strong> <%= comment.content %>
             </div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form_with(model: [@post, Comment.new], local: true) do |form| %>
+        <%= form.text_area :content, placeholder: "Add a comment..." %>
+        <%= form.submit "Comment" %>
         <% end %>
     </div>
 
