@@ -5,9 +5,9 @@ class CommentsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    @comment = current_user.comments.build(comment_params.merge(post: @post))
+    @comment = @post.comments.build(comment_params.merge(user: current_user))
     if @comment.save
-      redirect_to [@post.user, @post], notice: 'Comment was successfully created.'
+      redirect_to @post, notice: 'Comment was successfully added.'
     else
       render :new
     end
@@ -16,6 +16,6 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:content, :post_id) # Add other comment attributes if any
+    params.require(:comment).permit(:content) # Add other comment attributes if any
   end
 end

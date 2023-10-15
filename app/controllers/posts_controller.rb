@@ -4,6 +4,11 @@ class PostsController < ApplicationController
     @posts = @user.posts
   end
 
+  # This action is for rendering the form to create a new post.
+  def new
+    @post = current_user.posts.build
+  end
+
   def show
     @post = Post.find(params[:id])
   end
@@ -20,6 +25,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content) # Add other post attributes if any
+    params.require(:post).permit(:title, :body) # Add other post attributes if any
   end
 end
