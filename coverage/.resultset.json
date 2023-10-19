@@ -43,38 +43,14 @@
           1,
           null,
           1,
-          24,
-          null,
-          null,
-          9,
-          null,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          1,
-          0,
+          100,
           null,
           null,
           1,
-          8,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
           null,
           1,
-          0,
-          null,
+          1,
+          1,
           null
         ]
       },
@@ -82,8 +58,8 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          10,
+          10,
           null,
           null,
           null,
@@ -92,18 +68,29 @@
           null,
           null,
           1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
           1,
           null,
-          null,
           1,
           0,
-          0,
-          0,
           null,
-          0,
-          null,
-          null,
-          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           1,
           null,
           1,
@@ -180,6 +167,21 @@
         "branches": {
         }
       },
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/users_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/like.rb": {
         "lines": [
           0,
@@ -197,6 +199,6 @@
         }
       }
     },
-    "timestamp": 1697736064
+    "timestamp": 1697737345
   }
 }

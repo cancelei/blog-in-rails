@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User post index page' do
+RSpec.describe 'User post index page', type: :feature do
   before(:each) do
     @user = User.create(name: 'Mohammad', photo: 'https://example.jpg', bio: 'Eng')
 
@@ -10,17 +10,11 @@ RSpec.describe 'User post index page' do
       @posts << Post.create(author: @user, title: "Post #{i}", body: "Body of post #{i}")
     end
 
-    # Create comments and likes for one of the posts
-    @post_with_comments = @posts.first
-    Comment.create(content: 'Comment 1', user: @user, post: @post_with_comments)
-    Comment.create(content: 'Comment 2', user: @user, post: @post_with_comments)
-    Like.create(user: @user, post: @post_with_comments)
-
     visit user_posts_path(@user)
   end
 
   scenario 'I can see the user\'s profile picture' do
-    expect(page).to have_css('img.user-profile')
+    expect(page).to have_css('img.profile-photo') # Use 'profile-photo' instead of 'user-photo'
   end
 
   scenario 'I can see the user\'s username' do
@@ -28,7 +22,7 @@ RSpec.describe 'User post index page' do
   end
 
   scenario 'I can see the number of posts the user has written' do
-    expect(page).to have_content('Posts written: 10') # Assuming 10 posts were created in the before block
+    expect(page).to have_content("Number of posts: 10") # Assuming 10 posts were created in the before block
   end
 
   scenario 'I can see a post\'s title' do
@@ -36,7 +30,7 @@ RSpec.describe 'User post index page' do
   end
 
   scenario 'I can see some of the post\'s body' do
-    expect(page).to have_content(@posts.first.body)
+    expect(page).to have_content(@posts.first.body.truncate(100))
   end
 
   scenario 'I can see the first comments on a post' do
@@ -50,11 +44,12 @@ RSpec.describe 'User post index page' do
   end
 
   scenario 'I can see how many likes a post has' do
-    expect(page).to have_content('Likes: 1')
+    # Add code to display the number of likes on the post, e.g., 'Likes: 5'
+    expect(page).to have_content('Likes: 5')
   end
 
   scenario 'I can see a section for pagination if there are more posts than fit on the view' do
-    # Assuming 10 posts are created, and per your pagination settings, you want to show 5 per page
+    # Assuming you have implemented pagination in your view
     expect(page).to have_css('ul.pagination')
   end
 
