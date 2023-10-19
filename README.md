@@ -21,6 +21,13 @@
     - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -122,7 +129,7 @@ bin/rails db:migrate RAILS_ENV=test
 **Note:** Given that the aim of this project is to test the application's UI, to see if it works without side effects. We have therefore had to modify the contents of certain files, which could have the effect of falsifying certain `Unit` tests. 
 We therefore recommend that, rather than running all the tests, you only test the `features` folder and run 
 
-`````sh
+```sh
 bundle exec rspec ./spec/features
 
 ```
