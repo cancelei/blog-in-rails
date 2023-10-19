@@ -1,46 +1,20 @@
 {
   "RSpec": {
     "coverage": {
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/application_controller.rb": {
+      "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/helpers/application_helper.rb": {
         "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
       },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/users_controller.rb": {
+      "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/models/user.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
           1,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
           null,
           1,
           1,
@@ -52,25 +26,13 @@
           null
         ]
       },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/likes_controller.rb": {
+      "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/models/application_record.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          null
+        ]
       },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/posts_controller.rb": {
       "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/controllers/users_controller.rb": {
         "lines": [
           1,
@@ -97,142 +59,61 @@
       },
       "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/models/post.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
+          1,
           null,
-          0,
-          0,
-          0,
           1,
           2,
           null,
-          0,
-          0,
-          0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           4,
           null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          1,
+          null
+        ]
       },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/users_controller.rb": {
       "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/controllers/posts_controller.rb": {
         "lines": [
-          0,
-          0,
-          0,
           1,
           1,
           0,
           0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
           1,
           0,
           0,
           0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
       },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/comment.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          1,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          1,
-          1,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/like.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/post.rb": {
       "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/models/comment.rb": {
-      "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/controllers/posts_controller.rb": {
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
+        "lines": [
           1,
           1,
           1,
@@ -246,14 +127,32 @@
           null,
           1,
           0,
-          3,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/controllers/comments_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
           null,
           0,
           0,
           0,
           0,
-          1,
-          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
           null,
           0,
           0,
@@ -263,13 +162,13 @@
         "branches": {
         }
       },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/user.rb": {
+      "/mnt/c/Users/glaub/OneDrive/Desktop/microverseprojects/blog-in-rails/app/controllers/likes_controller.rb": {
         "lines": [
           0,
+          0,
+          0,
+          0,
           null,
-          0,
-          0,
-          0,
           0,
           0,
           0,
@@ -287,11 +186,7 @@
           0,
           0,
           null,
-          null,
           0,
-          0,
-          0,
-          null,
           null,
           0,
           0,
@@ -302,6 +197,6 @@
         }
       }
     },
-    "timestamp": 1697690683
+    "timestamp": 1697727803
   }
 }
