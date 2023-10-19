@@ -124,6 +124,7 @@ We therefore recommend that, rather than running all the tests, you only test th
 
 `````sh
 bundle exec rspec ./spec/features
+
 ```
 
 ### Deployment
