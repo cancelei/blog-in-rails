@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-  let(:user) { User.create!(email: 'test@example.com', name: 'Test User', bio: 'Test bio.') }
+  let(:user) { User.create!(name: 'Test User', bio: 'Test bio.') }
 
   describe 'GET /index' do
     it 'renders the index template' do

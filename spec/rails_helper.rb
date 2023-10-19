@@ -12,9 +12,11 @@ SimpleCov.start 'rails' do
 end
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+require 'capybara/rspec'
 require 'spec_helper'
 require 'shoulda/matchers'
 require 'factory_bot_rails'
+require 'database_cleaner'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -57,6 +59,26 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
+  # rails_helper.rb
+  config.before(:suite) do
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.strategy = :transaction
+  end
+
+  config.before(:each, js: true) do
+    DatabaseCleaner.strategy = :truncation
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
 
@@ -87,3 +109,30 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+# Test configuration for google drivers
+require 'selenium/webdriver'
+
+# Register the headless Chrome driver
+Capybara.register_driver :selenium_chrome_headless do |app|
+  options = Selenium::WebDriver::Chrome::Options.new
+
+  # Path to your chrome binary
+  options.binary = '/usr/bin/google-chrome'
+  # Enable headless mode for faster tests
+  options.add_argument('--headless')
+  options.add_argument('--no-sandbox')
+  options.add_argument('--disable-gpu')
+
+  Capybara::Selenium::Driver.new(app, browser: :chrome, options:)
+end
+
+# Set the default driver and javascript driver
+Capybara.default_driver = :selenium_chrome_headless
+Capybara.javascript_driver = :selenium_chrome_headless
+
+# Other configurations remain the same
+Capybara.server = :puma, { Silent: true } # To mute puma server logs
+Capybara.default_max_wait_time = 10 # Default is 2 seconds
+Capybara.server_port = 3001
+Capybara.app_host = 'http://localhost:3001'

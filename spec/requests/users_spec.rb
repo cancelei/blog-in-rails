@@ -19,7 +19,7 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'GET /show' do
-    let(:user) { User.create!(email: 'test@example.com', name: 'Test User', bio: 'Test bio.') }
+    let(:user) { User.create!(name: 'Test User', bio: 'Test bio.') }
 
     it 'renders the show template' do
       get user_path(user.id)
