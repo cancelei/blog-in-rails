@@ -4,7 +4,6 @@ require 'faker'
 users = 15.times.map do
   User.create!(
     name: Faker::Name.name,
-    email: Faker::Internet.unique.email,
     bio: Faker::Lorem.sentence(word_count: rand(7..15)),
     photo: Faker::Avatar.image(slug: Faker::Internet.unique.username, size: "120x120")
   )

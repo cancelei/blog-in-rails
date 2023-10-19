@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :user do
     name { 'Test User' }
-    email { 'testuser@example.com' }
     posts_counter { 0 }
+    bio { 'Test bio.' }
     # ... other attributes
   end
 end

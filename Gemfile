@@ -75,6 +75,11 @@ group :test do
   gem 'rails-controller-testing'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 4.0'
+  gem 'webdrivers', '~> 4.0'
+  # gem 'launchy'
+  gem 'database_cleaner'
 end
 
+gem 'bootstrap', '~> 5.2' # Use the version you want.
+gem 'popper_js', '~> 2.9'
 gem 'rubocop', '>= 1.0', '< 2.0'

@@ -1,8 +1,9 @@
 FactoryBot.define do
   factory :post do
-    title { 'Test Title' }
+    title { 'Specific Test Title' }
+    body { 'This is a test post.' }
     comments_counter { 0 }
-    # ... other attributes
-    author { create(:user) } # This ensures a User is created when a Post is created
+
+    author { create(:user) }
   end
 end
