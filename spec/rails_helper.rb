@@ -6,6 +6,7 @@ SimpleCov.start 'rails' do
   add_filter '/jobs/' # Ignore job directory
   add_filter '/mailers/' # Ignore mailers
   add_filter '/app/channels/application_cable/' # Ignore app/channels/application_cable
+  add_filter '/app/' # Disable codecov
 
   add_group 'Models', 'app/models'
   add_group 'Controllers', 'app/controllers'
