@@ -2,7 +2,11 @@
   <% @users.each do |user| %>
     <div class="user-card">
       <div class="user-image">
-        <%= image_tag user.photo, alt: user.name, class: "user-photo" %>
+        <% if @user.present? %>
+          <% if @user.photo.present? %>
+            <%= image_tag @user.photo, alt: @user.name, class: "profile-photo" %>
+          <% end %>
+        <% end %>
       </div>
       <div class="user-info">
         <h3><%= link_to user.name, user_path(user), class: "user-name" %></h3>

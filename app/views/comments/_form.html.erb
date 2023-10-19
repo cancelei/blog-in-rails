@@ -1,7 +1,7 @@
 <%= form_for [@post, @comment] do |f| %>
   <% if @comment.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+      <h2><%= pluralize(@comment.errors.count, "error") %> prevented this comment from being saved:</h2>
       <ul>
       <% @comment.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,11 +11,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
+    <%= f.label :content, "Comment Content" %>
+    <%= f.text_area :content, placeholder: "Write your comment here..." %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Add Comment" %>
   </div>
 <% end %>

@@ -2,7 +2,7 @@
 
     <!-- Post Header -->
     <div class="post-header">
-        <h2 class="post-title">Post #<%= @post.id %> by <%= @post.author.name %></h2>
+        <h2 class="post-title"><%= @post.title %> by <%= @post.author.name %></h2>
         <div class="post-metadata">
             <span>Comments: <%= @post.comments.count %></span>
             <%= button_to 'Like', post_likes_path(@post), method: :post %>
