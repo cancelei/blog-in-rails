@@ -28,7 +28,7 @@ RSpec.describe 'User post index page' do
   end
 
   scenario 'I can see the number of posts the user has written' do
-    expect(page).to have_content('Posts written: 10') # Assuming 10 posts were created in the before block
+    expect(page).to have_content('Number of posts: 10') # Assuming 10 posts were created in the before block
   end
 
   scenario 'I can see a post\'s title' do
@@ -55,11 +55,11 @@ RSpec.describe 'User post index page' do
 
   scenario 'I can see a section for pagination if there are more posts than fit on the view' do
     # Assuming 10 posts are created, and per your pagination settings, you want to show 5 per page
-    expect(page).to have_css('ul.pagination')
+    expect(page).to have_css('div.pagination')
   end
 
   scenario 'When I click on a post, it redirects me to that post\'s show page' do
-    click_link @posts.first.title
-    expect(page).to have_current_path(user_post_path(@user, @posts.first))
+    click_link 'Post 1'
+    expect(current_path).to eq(user_post_path(@user, @posts[0]))
   end
 end
