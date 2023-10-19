@@ -34,13 +34,13 @@ RSpec.describe 'Post show page', type: :feature do
 
   it 'I can see the username of each commentor' do
     visit post_path(@post_with_comments)
-      expect(page).to have_content(@comment_1.user.name)
-      expect(page).to have_content(@comment_2.user.name)
+    expect(page).to have_content(@comment1.user.name)
+    expect(page).to have_content(@comment2.user.name)
   end
 
   it 'I can see the comment each commentor left' do
     visit post_path(@post_with_comments)
-      expect(page).to have_content(@comment_1.content)
-      expect(page).to have_content(@comment_2.content)
+    expect(page).to have_content(@comment1.content)
+    expect(page).to have_content(@comment2.content)
   end
 end
