@@ -35,6 +35,7 @@
     "**/bootstrap*.css",
     "node_modules/**",
     "vendor/**",
-    "coverage/**"
+    "coverage/**",
+    "public/**"
   ]
 }
