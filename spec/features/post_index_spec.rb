@@ -20,7 +20,7 @@ RSpec.describe 'User post index page' do
   end
 
   scenario 'I can see the user\'s profile picture' do
-    expect(page).to have_css('img.user-profile')
+    expect(page).to have_css("img.profile-photo[src*='https://example.jpg']")
   end
 
   scenario 'I can see the user\'s username' do

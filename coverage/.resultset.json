@@ -7,30 +7,6 @@
           null
         ]
       },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
       "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/user.rb": {
         "lines": [
           1,
@@ -54,6 +30,109 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/post.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          100,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/comment.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          20,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/like.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          10,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          10,
+          10,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
@@ -102,96 +181,11 @@
         "branches": {
         }
       },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/posts_controller.rb": {
+      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/users_controller.rb": {
         "lines": [
           0,
           0,
           0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/comment.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/like.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/post.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           null,
           0,
@@ -203,6 +197,6 @@
         }
       }
     },
-    "timestamp": 1697734288
+    "timestamp": 1697736971
   }
 }
