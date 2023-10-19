@@ -5,7 +5,7 @@
     </div>
     <div class="user-info">
       <h2><%= @user.name %></h2>
-      <p>Number of posts: <%= @user.posts_counter %></p>
+      <p>Number of posts: <%= @user.posts.size %></p>
     </div>
   </div>
 
@@ -14,11 +14,11 @@
       <h3><%= post.title %></h3>
       <p><%= post.body.truncate(100) %></p>
       <div class="post-stats">
-        <span>Comments: <%= post.comments_counter %></span>
+        <span>Comments: <%= post.comments.size %></span>
         <span>Likes: <%= post.likes_counter %></span>
       </div>
       <div class="post-comments">
-        <% post.comments.recent.each do |comment| %>
+        <% post.comments.each do |comment| %>
           <div class="comment">
             <strong><%= comment.user.name %>:</strong> <%= comment.content %>
           </div>
