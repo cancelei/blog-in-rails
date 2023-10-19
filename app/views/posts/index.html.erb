@@ -12,8 +12,8 @@
   <% @posts.each do |post| %>
     <div class="post-card">
       <h3>
-      <%=post.title%>
-        </h3>
+          <h3><%= link_to post.title, user_post_path(post.author, post), class: "user-name" %></h3>
+      </h3>
       <p><%= post.body.truncate(100) %></p>
       <div class="post-stats">
         <span>Comments: <%= post.comments.size %></span>

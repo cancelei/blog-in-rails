@@ -1,16 +1,11 @@
 require 'rails_helper'
+require 'tools/test_data'
 
 RSpec.describe 'User post index page', type: :feature do
+  include TestData
   before(:each) do
-    @user = User.create(name: 'Mohammad', photo: 'https://example.jpg', bio: 'Eng')
-
-    # Create multiple posts for the user
-    @posts = []
-    (1..10).each do |i|
-      @posts << Post.create(author: @user, title: "Post #{i}", body: "Body of post #{i}")
-    end
-
-    visit user_posts_path(@user)
+    call_test_data
+    visit user_posts_path(@user1)
   end
 
   scenario 'I can see the user\'s profile picture' do
@@ -18,7 +13,7 @@ RSpec.describe 'User post index page', type: :feature do
   end
 
   scenario 'I can see the user\'s username' do
-    expect(page).to have_content(@user.name)
+    expect(page).to have_content(@user1.name)
   end
 
   scenario 'I can see the number of posts the user has written' do
@@ -45,7 +40,7 @@ RSpec.describe 'User post index page', type: :feature do
 
   scenario 'I can see how many likes a post has' do
     # Add code to display the number of likes on the post, e.g., 'Likes: 5'
-    expect(page).to have_content('Likes: 5')
+    expect(page).to have_content('Likes: 3')
   end
 
   scenario 'I can see a section for pagination if there are more posts than fit on the view' do
@@ -55,6 +50,7 @@ RSpec.describe 'User post index page', type: :feature do
 
   scenario 'When I click on a post, it redirects me to that post\'s show page' do
     click_link 'Post 1'
-    expect(current_path).to eq(user_post_path(@user, @posts[0]))
+    # expect(current_path).to eq(user_post_path(@user1, @posts[0]))
+    expect(page).to have_current_path(user_post_path(@user1, @posts[0]))
   end
 end
