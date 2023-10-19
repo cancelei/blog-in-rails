@@ -1,13 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/helpers/application_helper.rb": {
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/user.rb": {
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -26,14 +26,14 @@
           null
         ]
       },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/application_record.rb": {
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/post.rb": {
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/post.rb": {
         "lines": [
           1,
           1,
@@ -54,58 +54,12 @@
           null
         ]
       },
-<<<<<<< HEAD
       "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/posts_controller.rb": {
         "lines": [
           1,
           1,
           10,
           10,
-=======
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/comment.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          20,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/models/like.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
->>>>>>> 7d3a07b911b565f54a9f1b3cd07fd83dd2a38efa
-          null,
-          1,
-          10,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/posts_controller.rb": {
-        "lines": [
-          1,
-          1,
-          10,
-          10,
           null,
           null,
           null,
@@ -114,7 +68,7 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
@@ -134,7 +88,6 @@
           null
         ]
       },
-<<<<<<< HEAD
       "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/application_controller.rb": {
         "lines": [
           1,
@@ -147,20 +100,29 @@
         ]
       },
       "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/comment.rb": {
-=======
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/application_controller.rb": {
->>>>>>> 7d3a07b911b565f54a9f1b3cd07fd83dd2a38efa
         "lines": [
+          1,
+          1,
+          1,
+          null,
           1,
           1,
           null,
           1,
           0,
           null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
           null
         ]
       },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/comments_controller.rb": {
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/comments_controller.rb": {
         "lines": [
           0,
           0,
@@ -187,7 +149,7 @@
         "branches": {
         }
       },
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/likes_controller.rb": {
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/likes_controller.rb": {
         "lines": [
           0,
           0,
@@ -205,7 +167,6 @@
         "branches": {
         }
       },
-<<<<<<< HEAD
       "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/users_controller.rb": {
         "lines": [
           0,
@@ -222,13 +183,11 @@
         }
       },
       "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/like.rb": {
-=======
-      "/mnt/c/Users/Joseph/Documents/Microverse/module_5_rails/week_3/groupe/blog-in-rails/app/controllers/users_controller.rb": {
->>>>>>> 7d3a07b911b565f54a9f1b3cd07fd83dd2a38efa
         "lines": [
           0,
           0,
           0,
+          null,
           0,
           null,
           0,
@@ -240,10 +199,6 @@
         }
       }
     },
-<<<<<<< HEAD
-    "timestamp": 1697737345
-=======
-    "timestamp": 1697741404
->>>>>>> 7d3a07b911b565f54a9f1b3cd07fd83dd2a38efa
+    "timestamp": 1697744242
   }
 }

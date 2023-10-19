@@ -12,9 +12,7 @@
   <% @posts.each do |post| %>
     <div class="post-card">
       <h3>
-        <%= link_to user_post_path(post.author, post) do %>
       <%=post.title%>
-    <%end%>
         </h3>
       <p><%= post.body.truncate(100) %></p>
       <div class="post-stats">
