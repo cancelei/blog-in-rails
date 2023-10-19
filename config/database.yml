@@ -27,7 +27,7 @@ development:
   username: glauber
   password: admin
   host: localhost
-  port: 5433
+  # port: 5433
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -65,7 +65,7 @@ test:
   username: glauber
   password: admin
   host: localhost
-  port: 5433
+  # port: 5433
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -94,4 +94,4 @@ production:
   username: blog_app
   password: <%= ENV["BLOG_APP_DATABASE_PASSWORD"] %>
   host: localhost
-  port: 5433
+  # port: 5433
