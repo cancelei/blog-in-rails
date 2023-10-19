@@ -1,65 +1,62 @@
-require 'rails_helper'
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
+# be faster and is potentially less error prone than running all of your
+# migrations from scratch. Old migrations may fail to apply correctly if those
+# migrations use external dependencies or application code.
+#
+# It's strongly recommended that you check this file into your version control system.
 
-RSpec.describe 'User post index page' do
-  before(:each) do
-    @user = User.create(name: 'Mohammad', photo: 'https://example.jpg', bio: 'Eng')
+ActiveRecord::Schema[7.0].define(version: 2023_10_19_041125) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
-    # Create multiple posts for the user
-    @posts = []
-    (1..10).each do |i|
-      @posts << Post.create(author: @user, title: "Post #{i}", body: "Body of post #{i}")
-    end
-
-    # Create comments and likes for one of the posts
-    @post_with_comments = @posts.first
-    Comment.create(content: 'Comment 1', user: @user, post: @post_with_comments)
-    Comment.create(content: 'Comment 2', user: @user, post: @post_with_comments)
-    Like.create(user: @user, post: @post_with_comments)
-
-    visit user_posts_path(@user)
+  create_table "comments", force: :cascade do |t|
+    t.text "content"
+    t.bigint "user_id", null: false
+    t.bigint "post_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_comments_on_post_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  scenario 'I can see the user\'s profile picture' do
-    expect(page).to have_css('img.user-profile')
+  create_table "likes", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "post_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_likes_on_post_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
-  scenario 'I can see the user\'s username' do
-    expect(page).to have_content(@user.name)
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.bigint "author_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "comments_counter", default: 0
+    t.integer "likes_counter", default: 0
+    t.text "text"
+    t.index ["author_id"], name: "index_posts_on_author_id"
   end
 
-  scenario 'I can see the number of posts the user has written' do
-    expect(page).to have_content('Posts written: 10') # Assuming 10 posts were created in the before block
+  create_table "users", force: :cascade do |t|
+    t.string "photo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.text "bio"
+    t.integer "posts_counter", default: 0
   end
 
-  scenario 'I can see a post\'s title' do
-    expect(page).to have_content(@posts.first.title)
-  end
-
-  scenario 'I can see some of the post\'s body' do
-    expect(page).to have_content(@posts.first.body)
-  end
-
-  scenario 'I can see the first comments on a post' do
-    expect(page).to have_content('Comments:')
-    expect(page).to have_content('Comment 1')
-    expect(page).to have_content('Comment 2')
-  end
-
-  scenario 'I can see how many comments a post has' do
-    expect(page).to have_content('Comments: 2')
-  end
-
-  scenario 'I can see how many likes a post has' do
-    expect(page).to have_content('Likes: 1')
-  end
-
-  scenario 'I can see a section for pagination if there are more posts than fit on the view' do
-    # Assuming 10 posts are created, and per your pagination settings, you want to show 5 per page
-    expect(page).to have_css('ul.pagination')
-  end
-
-  scenario 'When I click on a post, it redirects me to that post\'s show page' do
-    click_link @posts.first.title
-    expect(page).to have_current_path(user_post_path(@user, @posts.first))
-  end
+  add_foreign_key "comments", "posts"
+  add_foreign_key "comments", "users"
+  add_foreign_key "likes", "posts"
+  add_foreign_key "likes", "users"
+  add_foreign_key "posts", "users", column: "author_id"
 end

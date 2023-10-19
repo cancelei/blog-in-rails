@@ -43,14 +43,72 @@
           1,
           null,
           1,
+          24,
+          null,
+          null,
+          9,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          8,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
           1,
           null,
           null,
           1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
           null,
           1,
+          null,
           1,
-          1,
+          0,
+          null,
           null
         ]
       },
@@ -64,7 +122,7 @@
           1,
           null,
           1,
-          2,
+          0,
           null,
           null,
           1,
@@ -74,65 +132,6 @@
           1,
           null,
           1,
-          null
-        ]
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/like.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/posts_controller.rb": {
-        "lines": [
-          1,
-          1,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          7,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          0,
-          null,
           null
         ]
       },
@@ -181,11 +180,12 @@
         "branches": {
         }
       },
-      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/controllers/users_controller.rb": {
+      "/mnt/c/Users/Najibullah/Downloads/Documents/blog-in-rails/app/models/like.rb": {
         "lines": [
           0,
           0,
           0,
+          null,
           0,
           null,
           0,
@@ -197,6 +197,6 @@
         }
       }
     },
-    "timestamp": 1697733933
+    "timestamp": 1697736064
   }
 }
