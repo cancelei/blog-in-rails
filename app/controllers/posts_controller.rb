@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
-    @posts = @user.posts
+    @user = User.includes(posts: :comments).find(params[:user_id])
+    @posts = @user.posts.includes(comments: :user)
   end
 
   # This action is for rendering the form to create a new post.
