@@ -156,7 +156,8 @@ You can deploy this project using:
 
 - GitHub: [@cancelei](https://github.com/cancelei)
 - LinkedIn: [Glauber Bannwart](https://www.linkedin.com/in/gbannwart/)
-
+👤 **Joseph Kausi**
+👤 **Najibullah Jafari**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

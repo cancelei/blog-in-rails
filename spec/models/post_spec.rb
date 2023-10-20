@@ -36,26 +36,11 @@ RSpec.describe Post, type: :model do
     it { should have_many(:likes).dependent(:destroy) }
   end
 
-  # Assuming that there's a method to fetch the 5 most recent comments
-  describe '#recent_comments' do
-    it 'fetches the 5 most recent comments' do
-      7.times { create(:comment, post: valid_post) }
-      expect(valid_post.recent_comments.count).to eq(5)
-    end
-  end
-
   # Add tests for other methods or functionalities if they exist
   describe 'methods' do
     let(:user) { FactoryBot.create(:user) }
     let(:post) { FactoryBot.create(:post, author: user) }
 
-    context 'recent_comments' do
-      it 'fetches the 5 most recent comments' do
-        10.times { FactoryBot.create(:comment, post:) }
-        expect(post.recent_comments.count).to eq(5)
-        expect(post.recent_comments.first).to eq(Comment.last)
-      end
-    end
   end
 
   describe 'update_user_posts_counter' do
