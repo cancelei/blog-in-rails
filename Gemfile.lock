@@ -331,7 +331,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bootstrap (~> 5.2)
+  bootstrap (~> 5)
   capybara
   database_cleaner
   debug

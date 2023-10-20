@@ -1,8 +1,11 @@
 <div class="posts-container">
   <div class="user-header">
     <div class="user-image">
-      <%= image_tag @user.photo, alt: @user.name, class: "profile-photo" %>
-    </div>
+  <% if @user.photo.present? %>
+    <%= image_tag @user.photo, alt: @user.name, class: "profile-photo" %>
+  <% end %>
+</div>
+
     <div class="user-info">
       <h2><%= @user.name %></h2>
       <p>Number of posts: <%= @user.posts.size %></p>
