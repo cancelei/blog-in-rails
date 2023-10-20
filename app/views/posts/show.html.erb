@@ -7,8 +7,6 @@
             <span>Comments: <%= @post.comments.count %></span>
             <%= button_to 'Like', post_likes_path(@post), method: :post %>
             <span>Likes: <%= @post.likes_counter %></span>
-
-            <!-- You can add likes in the same manner if you have implemented that -->
         </div>
     </div>
 
