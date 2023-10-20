@@ -40,7 +40,6 @@ RSpec.describe Post, type: :model do
   describe 'methods' do
     let(:user) { FactoryBot.create(:user) }
     let(:post) { FactoryBot.create(:post, author: user) }
-
   end
 
   describe 'update_user_posts_counter' do
