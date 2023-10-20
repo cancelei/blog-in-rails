@@ -80,7 +80,9 @@ group :test do
   gem 'database_cleaner'
 end
 
-gem 'bootstrap', '~> 5.2' # Use the version you want.
+gem 'bootstrap', '~> 5' # Use the version you want.
+gem 'devise'
+gem 'letter_opener'
 gem 'popper_js', '~> 2.9'
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'will_paginate'
