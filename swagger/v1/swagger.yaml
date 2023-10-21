@@ -1,0 +1,62 @@
+openapi: 3.0.3
+info:
+  version: '1.0.0'
+  title: 'API Documentation'
+  description: 'API documentation for the provided endpoints.'
+
+paths:
+  /api/users/{user_id}/posts:
+    get:
+      summary: 'Get all posts for a specific user'
+      description: 'Fetches all posts associated with the specified user ID.'
+      parameters:
+        - name: 'user_id'
+          in: 'path'
+          description: 'ID of the user whose posts are to be fetched.'
+          required: true
+          type: 'integer'
+      responses:
+        200:
+          description: 'Successful operation'
+          schema:
+            type: 'array'
+            items:
+              $ref: '#/definitions/Post'
+
+  /api/posts/{post_id}/comments:
+    get:
+      summary: 'Get all comments for a specific post'
+      description: 'Fetches all comments associated with the specified post ID.'
+      parameters:
+        - name: 'post_id'
+          in: 'path'
+          description: 'ID of the post whose comments are to be fetched.'
+          required: true
+          type: 'integer'
+      responses:
+        200:
+          description: 'Successful operation'
+          schema:
+            type: 'array'
+            items:
+              $ref: '#/definitions/Comment'
+
+definitions:
+  Post:
+    type: 'object'
+    properties:
+      id:
+        type: 'integer'
+      title:
+        type: 'string'
+      content:
+        type: 'string'
+  Comment:
+    type: 'object'
+    properties:
+      id:
+        type: 'integer'
+      text:
+        type: 'string'
+      postId:
+        type: 'integer'
