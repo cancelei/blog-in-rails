@@ -62,6 +62,7 @@
 
 - **Make use for migrations features from Active Record**
 - **Include Tables for User, Comment, Post, and Like**
+- **Use user authentification and authorizations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -80,6 +80,7 @@ group :test do
   gem 'database_cleaner'
 end
 
+gem 'active_model_serializers', '~> 0.10.13'
 gem 'bootstrap', '~> 5' # Use the version you want.
 gem 'cancancan'
 gem 'devise'
