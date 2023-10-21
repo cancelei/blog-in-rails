@@ -43,7 +43,6 @@ class PostsController < ApplicationController
     if @post.author == current_user
       # Decrement the user's post counter
       current_user.decrement!(:posts_counter)
-
       # Destroy the post
       @post.destroy
 
@@ -52,7 +51,6 @@ class PostsController < ApplicationController
       redirect_to users_path, alert: 'You are not authorized to delete this post.'
     end
   end
-
 
   private
 
