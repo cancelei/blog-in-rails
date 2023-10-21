@@ -81,6 +81,7 @@ group :test do
 end
 
 gem 'bootstrap', '~> 5' # Use the version you want.
+gem 'cancancan'
 gem 'devise'
 gem 'letter_opener'
 gem 'popper_js', '~> 2.9'
